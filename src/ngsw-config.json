@@ -21,7 +21,21 @@
     "resources": {
       "files": [
         "/assets/**"
+      ],
+      "urls": [
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/**"
       ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "api-performance",
+    "urls": [
+      "/"
+    ],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "1d",
+      "strategy": "performance"
     }
   }]
 }

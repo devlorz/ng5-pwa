@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { AppMaterialModule } from './app-material.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { PokedexService } from './pokedex.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,11 +18,12 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule,
     AppMaterialModule,
+    HttpClientModule,
     ServiceWorkerModule.register('/ngsw-worker.js', {
       enabled: environment.production
     })
   ],
-  providers: [],
+  providers: [PokedexService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

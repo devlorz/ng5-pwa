@@ -9,14 +9,11 @@
          placeholder="Search pokemon"
          matInput>
 </mat-form-field>
-
-<mat-card class="pokemon-card">
-  <mat-card-title>Test</mat-card-title>
-  <mat-card-subtitle>Subtitle</mat-card-subtitle>
-  <img mat-card-image
-       src="http://www.freepngimg.com/download/pokemon/6-2-pokemon-png-hd.png">
-  <mat-card-footer>footer</mat-card-footer>
-</mat-card>
-<mat-card>
-  <mat-card-title>Test</mat-card-title>
-</mat-card>
+<div class="container">
+  <mat-card class="pokemon-card"
+            *ngFor="let pokemon of pokemonList">
+    <mat-card-title class="pokemon-title">#{{pokemon.id}} {{pokemon.name}}</mat-card-title>
+    <img class="pokemon-img"
+         src={{pokemon.sprite}}>
+  </mat-card>
+</div>

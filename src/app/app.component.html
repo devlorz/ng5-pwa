@@ -10,10 +10,13 @@
          matInput>
 </mat-form-field>
 <div class="container">
-  <mat-card class="pokemon-card"
-            *ngFor="let pokemon of pokemonList">
-    <mat-card-title class="pokemon-title">#{{pokemon.id}} {{pokemon.name}}</mat-card-title>
-    <img class="pokemon-img"
-         src={{pokemon.sprite}}>
-  </mat-card>
+  <div class="wrapper"
+       *ngFor="let pokemon of pokemonList">
+    <mat-card class="pokemon-card">
+      <mat-card-title class="pokemon-title">{{pokemon.name}}</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+      <img class="pokemon-img"
+           src={{pokemon.sprite}}>
+    </mat-card>
+  </div>
 </div>

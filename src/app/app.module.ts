@@ -1,3 +1,4 @@
+import { CapitalizePipe } from './capitalize.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -12,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokedexService } from './pokedex.service';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CapitalizePipe],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

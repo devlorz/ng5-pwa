@@ -28,14 +28,15 @@
     }
   }],
   "dataGroups": [{
-    "name": "api-performance",
+    "name": "api-freshness",
     "urls": [
       "/"
     ],
     "cacheConfig": {
       "maxSize": 100,
-      "maxAge": "1d",
-      "strategy": "performance"
+      "maxAge": "1h",
+      "timeout": "10s",
+      "strategy": "freshness"
     }
   }]
 }

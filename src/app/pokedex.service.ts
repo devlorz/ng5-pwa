@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import Pokemon from './Pokemon';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class PokedexService {
@@ -9,10 +11,10 @@ export class PokedexService {
 
   constructor(private http: HttpClient) {}
 
-  getPokemon() {
+  getPokemon(): Observable<Array<PokemonForList>> {
     return this.http.get(`${this.baseUrl}`).pipe(
-      map((pokemonList: Array<any>) => {
-        return pokemonList.map(pokemon => ({
+      map((pokemonList: Array<Pokemon>) => {
+        return pokemonList.map((pokemon: Pokemon) => ({
           name: pokemon.name,
           sprite: `${this.baseSpriteUrl}${pokemon.id}.png`,
           id: pokemon.id

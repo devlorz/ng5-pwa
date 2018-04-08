@@ -1,0 +1,23 @@
+.pokemon-img {
+  /* width: 200px;
+  height: 200px; */
+  display: block;
+  margin: 0 auto;
+}
+
+.pokemon-card {
+  width: 110px;
+  height: 146px;
+  margin: 0 auto;
+}
+
+.pokemon-title {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  left: 0;
+}

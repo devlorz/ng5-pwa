@@ -11,9 +11,10 @@ import { AppMaterialModule } from './app-material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PokedexService } from './pokedex.service';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 @NgModule({
-  declarations: [AppComponent, CapitalizePipe],
+  declarations: [AppComponent, CapitalizePipe, PokemonCardComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import Pokemon from './Pokemon';
+import Pokemon from './model/Pokemon';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()

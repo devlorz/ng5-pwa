@@ -1,12 +1,13 @@
 .pokemon-img {
   /* width: 200px;
   height: 200px; */
-  display: block;
   /* margin: 0 auto; */
   /* padding-top: 24px; */
+  display: block;
   position: absolute;
-  top: 15%;
-  left: 20%;
+  top: 10%;
+  left: 15%;
+  width: 70%;
 }
 
 .pokemon-card {
@@ -24,4 +25,8 @@
   color: #fff;
   width: 100%;
   left: 0;
+}
+
+.fire {
+  background-color: red;
 }

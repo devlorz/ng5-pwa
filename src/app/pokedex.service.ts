@@ -17,7 +17,8 @@ export class PokedexService {
         return pokemonList.map((pokemon: Pokemon) => ({
           name: pokemon.name,
           sprite: `${this.baseSpriteUrl}${pokemon.id}.png`,
-          id: pokemon.id
+          id: pokemon.id,
+          types: pokemon.types
         }));
       })
     );

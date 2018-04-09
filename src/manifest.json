@@ -1,0 +1,16 @@
+{
+  "short_name": "NG5-PWA",
+  "name": "Angular 5 Pokedex PWA",
+  "start_url": "/",
+  "theme_color": "#ff4081",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+        {
+            "src": "/assets/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

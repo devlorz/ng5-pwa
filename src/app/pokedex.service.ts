@@ -18,7 +18,7 @@ export class PokedexService {
           name: pokemon.name,
           sprite: `${this.baseSpriteUrl}${pokemon.id}.png`,
           id: pokemon.id,
-          types: pokemon.types
+          types: pokemon.types.sort()
         }));
       })
     );

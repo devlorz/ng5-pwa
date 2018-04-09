@@ -14,8 +14,31 @@ export class PokemonCardComponent implements OnInit {
   ngOnInit() {}
 
   public getColor() {
-    const type = this.pokemon.types[0];
-    switch (type) {
+    if (this.pokemon.types.length > 1) {
+      return '';
+    } else {
+      const type = this.pokemon.types[0];
+      return this.getColorCode(type);
+    }
+  }
+
+  public getBackground() {
+    if (this.pokemon.types.length < 2) {
+      return '';
+    } else {
+      const codeList = this.pokemon.types.map((colorName: string) =>
+        this.getColorCode(colorName)
+      );
+      const gradient = codeList.reduce((acc, cur) => {
+        return `${acc}, ${cur} 50%`;
+      }, '');
+      const linearGradient = `linear-gradient(90deg${gradient})`;
+      return linearGradient;
+    }
+  }
+
+  private getColorCode(colorName: string): string {
+    switch (colorName) {
       case 'grass':
         return '#78C850';
       case 'fire':
@@ -48,6 +71,8 @@ export class PokemonCardComponent implements OnInit {
         return '#B8A038';
       case 'dragon':
         return '#7038F8';
+      case 'ghost':
+        return '#705898';
       default:
         return '#fff';
     }

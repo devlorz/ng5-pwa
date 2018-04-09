@@ -1,5 +1,5 @@
 <mat-card class="pokemon-card"
-          [ngStyle]="{'background-color':getColor()}">
+          [ngStyle]="{'background': getBackground(), 'background-color': getColor()}">
   <img class="pokemon-img"
        src={{pokemon.sprite}}>
   <span class="pokemon-title">{{pokemon.name | capitalize}}</span>

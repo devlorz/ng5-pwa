@@ -30,3 +30,9 @@
 .fire {
   background-color: red;
 }
+
+@media (max-width: 599px) {
+  .pokemon-img {
+    top: 15%;
+  }
+}

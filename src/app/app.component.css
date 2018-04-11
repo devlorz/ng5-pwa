@@ -1,5 +1,6 @@
 mat-sidenav {
   width: 280px;
+  position: fixed;
 }
 
 .sidenav-title {

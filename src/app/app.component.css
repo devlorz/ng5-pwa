@@ -1,7 +1,3 @@
-* {
-  /* box-sizing: border-box; */
-}
-
 mat-sidenav {
   width: 280px;
 }
@@ -44,9 +40,6 @@ mat-toolbar {
   .wrapper {
     width: 33%;
   }
-}
-
-@media (min-width: 700px) {
 }
 
 @media (min-width: 768px) {

@@ -23,6 +23,7 @@
         "/assets/**"
       ],
       "urls": [
+        "https://fonts.googleapis.com/**",
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/**"
       ]
     }
@@ -33,7 +34,7 @@
       "/"
     ],
     "cacheConfig": {
-      "maxSize": 100,
+      "maxSize": 200,
       "maxAge": "4h",
       "strategy": "performance"
     }

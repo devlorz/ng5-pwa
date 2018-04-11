@@ -2,10 +2,24 @@
   /* box-sizing: border-box; */
 }
 
+mat-sidenav {
+  width: 280px;
+}
+
+mat-toolbar {
+  position: fixed;
+  z-index: 100;
+}
+
+.home-button {
+  min-width: 50px;
+  margin-right: 5px;
+}
+
 .search-bar {
   display: block;
   width: 90%;
-  margin: 1em auto;
+  margin: 80px auto 1em auto;
 }
 
 .container {
@@ -33,12 +47,13 @@
 }
 
 @media (min-width: 700px) {
-  .wrapper {
-    width: 25%;
-  }
 }
 
 @media (min-width: 768px) {
+  .wrapper {
+    width: 25%;
+  }
+
   .container {
     width: 90%;
     margin: 0 auto;
@@ -50,23 +65,18 @@
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .search-bar {
     width: 70%;
   }
 }
 
-@media (min-width: 1068px) {
+@media (min-width: 1260px) {
   .wrapper {
     width: 20%;
   }
 }
 
-@media (min-width: 1274px) {
+@media (min-width: 1390px) {
   .wrapper {
     width: 16.6%;
   }

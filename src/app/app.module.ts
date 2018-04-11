@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PokedexService } from './pokedex.service';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [AppComponent, CapitalizePipe, PokemonCardComponent],
@@ -21,6 +22,7 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
     FormsModule,
     AppMaterialModule,
     HttpClientModule,
+    LayoutModule,
     ServiceWorkerModule.register('/ngsw-worker.js', {
       enabled: environment.production
     })

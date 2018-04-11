@@ -1,10 +1,12 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav
-               mode="side"></mat-sidenav>
+               [mode]="sideNavMode"
+               [opened]="!isSmallScreen"></mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="accent"
                  class="primary-toolbar">
       <button mat-button
+              class="home-button"
               (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>

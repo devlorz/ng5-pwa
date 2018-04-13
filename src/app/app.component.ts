@@ -25,18 +25,31 @@ export class AppComponent implements OnInit {
       .pipe(pluck('matches'))
       .subscribe((isSmall: boolean) => (this.isSmallScreen = isSmall));
 
-    const saveData = localStorage.getItem('pokemonList');
-    if (saveData) {
-      const pokemonSaveData = JSON.parse(saveData);
-      this.pokemonData = pokemonSaveData;
-      this.pokemonList = pokemonSaveData;
-    } else {
-      this.pokedexService.getPokemon().subscribe(res => {
+    // const saveData = localStorage.getItem('pokemonList');
+    // if (saveData) {
+    //   const pokemonSaveData = JSON.parse(saveData);
+    //   this.pokemonData = pokemonSaveData;
+    //   this.pokemonList = pokemonSaveData;
+    // } else {
+    //   this.pokedexService.getPokemon().subscribe(res => {
+    //     this.pokemonData = res;
+    //     this.pokemonList = res;
+    //     localStorage.setItem('pokemonList', JSON.stringify(res));
+    //   });
+    // }
+
+    this.pokedexService.getPokemon().subscribe(
+      res => {
+        console.log('getting pokemon data');
+        console.log('pokemon : ', res);
         this.pokemonData = res;
         this.pokemonList = res;
-        localStorage.setItem('pokemonList', JSON.stringify(res));
-      });
-    }
+      },
+      error => {
+        this.pokemonData = [];
+        this.pokemonList = [];
+      }
+    );
   }
 
   get sideNavMode() {

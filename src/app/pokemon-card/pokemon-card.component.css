@@ -1,3 +1,7 @@
+button {
+  padding: 0;
+}
+
 .pokemon-img {
   /* width: 200px;
   height: 200px; */
@@ -25,6 +29,7 @@
   color: #fff;
   width: 100%;
   left: 0;
+  line-height: 20px;
 }
 
 .fire {

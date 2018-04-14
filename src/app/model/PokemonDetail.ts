@@ -1,4 +1,4 @@
-interface PokemonForList {
+interface PokemonDetail {
   name: string;
   sprite: string;
   id: number;

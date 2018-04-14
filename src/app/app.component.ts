@@ -9,10 +9,10 @@ import { pluck } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public pokemonList: Array<PokemonForList>;
+  public pokemonList: Array<PokemonDetail>;
   public searchText: string;
   public isSmallScreen: boolean;
-  private pokemonData: Array<PokemonForList>;
+  private pokemonData: Array<PokemonDetail>;
 
   constructor(
     private pokedexService: PokedexService,

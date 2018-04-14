@@ -11,7 +11,7 @@ export class PokedexService {
 
   constructor(private http: HttpClient) {}
 
-  getPokemon(): Observable<Array<PokemonForList>> {
+  getPokemon(): Observable<Array<PokemonDetail>> {
     return this.http.get(`${this.baseUrl}`).pipe(
       map((pokemonList: Array<Pokemon>) => {
         return pokemonList.map((pokemon: Pokemon) => ({

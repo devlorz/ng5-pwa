@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./pokemon-card.component.css']
 })
 export class PokemonCardComponent implements OnInit {
-  @Input() pokemon: PokemonForList;
+  @Input() pokemon: PokemonDetail;
   backgroundClass: string;
 
   constructor() {}

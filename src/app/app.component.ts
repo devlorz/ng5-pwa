@@ -40,8 +40,6 @@ export class AppComponent implements OnInit {
 
     this.pokedexService.getPokemon().subscribe(
       res => {
-        console.log('getting pokemon data');
-        console.log('pokemon : ', res);
         this.pokemonData = res;
         this.pokemonList = res;
       },

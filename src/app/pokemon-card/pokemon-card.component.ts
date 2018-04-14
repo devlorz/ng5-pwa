@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { PokemonDetailDialogComponent } from '../pokemon-detail-dialog/pokemon-detail-dialog.component';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -9,9 +11,16 @@ export class PokemonCardComponent implements OnInit {
   @Input() pokemon: PokemonDetail;
   backgroundClass: string;
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}
+
+  openDialog() {
+    this.dialog.open(PokemonDetailDialogComponent, {
+      width: '600px',
+      data: this.pokemon
+    });
+  }
 
   public getColor() {
     if (this.pokemon.types.length > 1) {

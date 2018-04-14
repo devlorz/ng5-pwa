@@ -3,4 +3,5 @@ interface PokemonDetail {
   sprite: string;
   id: number;
   types: Array<string>;
+  description: string;
 }

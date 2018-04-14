@@ -13,9 +13,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokedexService } from './pokedex.service';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { PokemonDetailDialogComponent } from './pokemon-detail-dialog/pokemon-detail-dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, CapitalizePipe, PokemonCardComponent],
+  entryComponents: [PokemonDetailDialogComponent],
+  declarations: [
+    AppComponent,
+    CapitalizePipe,
+    PokemonCardComponent,
+    PokemonDetailDialogComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+}
+
+.close-btn {
+  width: 24px;
+  min-width: 24px;
+  padding: 0;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}

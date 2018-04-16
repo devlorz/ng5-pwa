@@ -6,6 +6,16 @@
   </button>
   <h2 mat-dialog-title>{{pokemon.name | capitalize}}</h2>
   <mat-dialog-content>
+    <div class="middle-content">
+      <img class="pokemon-img"
+           src={{pokemon.sprite}}>
+      <ul class="types-list">
+        <li *ngFor="let type of pokemon.types"
+            class="type-list">
+          {{ type }}
+        </li>
+      </ul>
+    </div>
     <div class="description">
       {{ pokemon.description }}
     </div>

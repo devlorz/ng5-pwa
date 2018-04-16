@@ -17,6 +17,17 @@
   padding: 0;
 }
 
+.types-list {
+  display: inline-block;
+}
+
+.type-list {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 5px;
+}
+
+.middle-content,
 .description {
   padding: 10px;
 }

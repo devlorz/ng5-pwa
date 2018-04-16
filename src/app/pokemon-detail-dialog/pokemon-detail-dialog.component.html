@@ -5,5 +5,9 @@
     <mat-icon>close</mat-icon>
   </button>
   <h2 mat-dialog-title>{{pokemon.name | capitalize}}</h2>
-  <mat-dialog-content>{{ pokemon.description }}</mat-dialog-content>
+  <mat-dialog-content>
+    <div class="description">
+      {{ pokemon.description }}
+    </div>
+  </mat-dialog-content>
 </div>

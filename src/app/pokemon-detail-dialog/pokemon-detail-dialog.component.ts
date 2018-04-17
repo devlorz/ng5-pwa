@@ -20,4 +20,8 @@ export class PokemonDetailDialogComponent implements OnInit {
   getColor(type: string) {
     return this.pokedexService.getColorCode(type);
   }
+
+  getTitleColor() {
+    return this.pokedexService.getColorCode(this.pokemon.types[0]);
+  }
 }

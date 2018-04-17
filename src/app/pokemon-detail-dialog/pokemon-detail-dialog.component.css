@@ -11,6 +11,10 @@
   right: 1px;
 }
 
+h2 {
+  color: #fff;
+}
+
 .mat-dialog-title {
   margin: 0;
 }

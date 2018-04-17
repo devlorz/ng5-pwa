@@ -6,18 +6,28 @@
   </button>
   <h2 mat-dialog-title>{{pokemon.name | capitalize}}</h2>
   <mat-dialog-content>
-    <div class="middle-content">
-      <img class="pokemon-img"
-           src={{pokemon.sprite}}>
+    <div class="above-content">
       <ul class="types-list">
         <li *ngFor="let type of pokemon.types"
-            class="type-list">
+            class="type-list"
+            [ngStyle]="{'background-color': getColor(type)}">
           {{ type }}
         </li>
       </ul>
+      <span class="pokemon-id">#{{pokemon.id}}</span>
     </div>
-    <div class="description">
-      {{ pokemon.description }}
+    <div class="middle-content">
+      <div class="left-content">
+        <img class="pokemon-img"
+             src={{pokemon.sprite}}>
+      </div>
+      <div class="right-content clearfix">
+
+        <div class="description clearfix">
+          {{ pokemon.description }}
+        </div>
+      </div>
     </div>
+
   </mat-dialog-content>
 </div>

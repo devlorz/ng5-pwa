@@ -65,4 +65,45 @@ export class PokedexService {
         return '#fff';
     }
   }
+
+  getTitleColorCode(colorName: string): string {
+    switch (colorName) {
+      case 'grass':
+        return 'rgb(76, 140, 44)';
+      case 'fire':
+        return 'rgb(171, 79, 13)';
+      case 'water':
+        return 'rgb(20, 75, 204)';
+      case 'bug':
+        return 'rgb(107, 117, 21)';
+      case 'poison':
+        return 'rgb(106, 42, 106)';
+      case 'flying':
+        return 'rgb(77, 30, 220)';
+      case 'normal':
+        return 'rgb(112, 112, 72)';
+      case 'electric':
+        return 'rgb(187, 151, 7)';
+      case 'ground':
+        return 'rgb(178, 140, 36)';
+      case 'fairy':
+        return 'rgb(218, 37, 76)';
+      case 'fighting':
+        return 'rgb(123, 30, 25)';
+      case 'psychic':
+        return 'rgb(211, 9, 69)';
+      case 'steel':
+        return '#B8B8D0';
+      case 'ice':
+        return 'rgb(66, 174, 174)';
+      case 'rock':
+        return 'rgb(121, 106, 37)';
+      case 'dragon':
+        return 'rgb(62, 7, 192)';
+      case 'ghost':
+        return 'rgb(74, 58, 100)';
+      default:
+        return '#fff';
+    }
+  }
 }

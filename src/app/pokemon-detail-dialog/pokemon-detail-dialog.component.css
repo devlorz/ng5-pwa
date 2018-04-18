@@ -1,5 +1,5 @@
 .container {
-  position: relative;
+  /* position: relative; */
 }
 
 .close-btn {
@@ -8,7 +8,8 @@
   padding: 0;
   position: absolute;
   top: 1px;
-  right: 1px;
+  left: 10px;
+  color: #fff;
 }
 
 h2 {
@@ -73,6 +74,10 @@ h2 {
 .mat-dialog-title {
   text-align: center;
   padding: 15px;
+}
+
+/deep/ .cdk-overlay-dark-backdrop {
+  /* background-color: red; */
 }
 
 .clearfix::after {

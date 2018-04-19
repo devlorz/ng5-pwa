@@ -26,6 +26,7 @@ mat-sidenav {
 mat-toolbar {
   position: fixed;
   z-index: 100;
+  top: 0;
 }
 
 .home-button {
@@ -54,6 +55,11 @@ mat-toolbar {
   display: inline-block;
   margin: 0 12px 1em 12px;
   position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* @media (min-width: 320px) {

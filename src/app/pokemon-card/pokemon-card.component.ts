@@ -21,8 +21,9 @@ export class PokemonCardComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(PokemonDetailDialogComponent, {
-      width: '600px',
-
+      width: '100%',
+      height: '100%',
+      hasBackdrop: true,
       data: this.pokemon
     });
   }

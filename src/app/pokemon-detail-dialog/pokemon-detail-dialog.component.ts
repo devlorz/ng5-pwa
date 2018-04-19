@@ -24,4 +24,29 @@ export class PokemonDetailDialogComponent implements OnInit {
   getTitleColor() {
     return this.pokedexService.getTitleColorCode(this.pokemon.types[0]);
   }
+
+  public getBackgroundColor() {
+    if (this.pokemon.types.length > 1) {
+      return '';
+    } else {
+      const type = this.pokemon.types[0];
+      return this.pokedexService.getColorCode(type);
+    }
+  }
+
+  public getBackground() {
+    if (this.pokemon.types.length < 2) {
+      return '';
+    } else {
+      const codeList = this.pokemon.types.map((colorName: string) =>
+        this.pokedexService.getColorCode(colorName)
+      );
+      const gradient = codeList.reduce((acc, cur) => {
+        return `${acc}, ${cur} 50%`;
+      }, '');
+      const linearGradient = `linear-gradient(90deg${gradient})`;
+      console.log(linearGradient);
+      return linearGradient;
+    }
+  }
 }

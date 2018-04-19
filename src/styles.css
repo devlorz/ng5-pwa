@@ -7,6 +7,7 @@ body {
 
 .mat-dialog-container {
   padding: 0 !important;
+  transition: none !important;
 }
 
 .cdk-overlay-pane {

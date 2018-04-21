@@ -1,6 +1,6 @@
 import { CapitalizePipe } from './capitalize.pipe';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -25,7 +25,7 @@ import { PokemonDetailDialogComponent } from './pokemon-detail-dialog/pokemon-de
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    NoopAnimationsModule,
     FormsModule,
     AppMaterialModule,
     HttpClientModule,

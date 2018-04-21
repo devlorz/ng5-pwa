@@ -31,10 +31,10 @@
   "dataGroups": [{
     "name": "api-performance",
     "urls": [
-      "/pokemon.json"
+      "/"
     ],
     "cacheConfig": {
-      "maxSize": 100,
+      "maxSize": 200,
       "maxAge": "4h",
       "strategy": "performance"
     }

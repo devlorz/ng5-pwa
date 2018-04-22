@@ -39,19 +39,11 @@
       <span>NG5-PWA</span>
     </mat-toolbar>
 
-    <mat-form-field floatPlaceholder="never"
-                    class="search-bar"
-                    color="accent">
-      <input type="text"
-             placeholder="Search pokemon"
-             [ngModel]="searchText"
-             (ngModelChange)="onSearch($event)"
-             matInput>
-    </mat-form-field>
-    <div class="container">
-      <app-pokemon-card class="wrapper"
-                        *ngFor="let pokemon of pokemonList"
-                        [pokemon]="pokemon"></app-pokemon-card>
-    </div>
+    <app-search-bar [searchText]="searchText"
+                    (search)="onSearch($event)"
+                    class="search-bar"></app-search-bar>
+
+    <app-pokemon-list [pokemonList]="pokemonList">
+    </app-pokemon-list>
   </mat-sidenav-content>
 </mat-sidenav-container>

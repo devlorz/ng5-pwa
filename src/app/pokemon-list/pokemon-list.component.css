@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 140px;
+  display: inline-block;
+  margin: 0 12px 1em 12px;
+  position: relative;
+}

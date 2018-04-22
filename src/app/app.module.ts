@@ -14,6 +14,8 @@ import { PokedexService } from './pokedex.service';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { PokemonDetailDialogComponent } from './pokemon-detail-dialog/pokemon-detail-dialog.component';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   entryComponents: [PokemonDetailDialogComponent],
@@ -21,7 +23,9 @@ import { PokemonDetailDialogComponent } from './pokemon-detail-dialog/pokemon-de
     AppComponent,
     CapitalizePipe,
     PokemonCardComponent,
-    PokemonDetailDialogComponent
+    PokemonDetailDialogComponent,
+    PokemonListComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

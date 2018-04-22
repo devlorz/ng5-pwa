@@ -1,0 +1,9 @@
+<mat-form-field floatPlaceholder="never"
+                class="search-bar"
+                color="accent">
+  <input type="text"
+         placeholder="Search pokemon"
+         [ngModel]="searchText"
+         (ngModelChange)="onSearch($event)"
+         matInput>
+</mat-form-field>

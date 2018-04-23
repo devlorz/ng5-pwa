@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import Pokemon from './model/Pokemon';
 import { Observable } from 'rxjs/Observable';
+import { POKEMON_API_URL } from '../../node_modules/api';
 
 @Injectable()
 export class PokedexService {
-  private baseUrl = 'https://ng-pokedex-f8bf4.firebaseio.com/pokemon.json';
+  private baseUrl = POKEMON_API_URL;
   private baseSpriteUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
   constructor(private http: HttpClient) {}

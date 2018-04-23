@@ -6,7 +6,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "sw-build": "ng build --prod && node build/fix-sw",
     "gen-ngsw": "./node_modules/.bin/ngsw-config dist src/ngsw-config.json",
     "test": "ng test",
     "lint": "ng lint",

@@ -5,7 +5,6 @@ import {
   MatCardModule,
   MatSidenavModule,
   MatButtonModule,
-  MatIconModule,
   MatDividerModule,
   MatListModule,
   MatDialogModule
@@ -18,7 +17,6 @@ import {
     MatCardModule,
     MatSidenavModule,
     MatButtonModule,
-    MatIconModule,
     MatDividerModule,
     MatListModule,
     MatDialogModule

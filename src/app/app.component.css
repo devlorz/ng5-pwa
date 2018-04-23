@@ -39,10 +39,6 @@ mat-toolbar {
     padding-left: 20px;
     height: 56px;
   }
-
-  .wrapper {
-    margin: 0 5px 1em 5px;
-  }
 }
 
 @media (min-width: 768px) {

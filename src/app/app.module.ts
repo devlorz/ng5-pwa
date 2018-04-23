@@ -17,6 +17,7 @@ import { PokemonDetailDialogComponent } from './pokemon-detail-dialog/pokemon-de
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   entryComponents: [PokemonDetailDialogComponent],
@@ -27,7 +28,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     PokemonDetailDialogComponent,
     PokemonListComponent,
     SearchBarComponent,
-    SidenavComponent
+    SidenavComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

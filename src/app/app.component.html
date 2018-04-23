@@ -2,18 +2,10 @@
   <mat-sidenav #sidenav
                [mode]="sideNavMode"
                [opened]="!isSmallScreen">
-    <app-sidenav></app-sidenav>
+    <app-sidenav (homeBtnClick)="sidenav.toggle()"></app-sidenav>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="accent"
-                 class="primary-toolbar">
-      <button mat-button
-              class="home-button"
-              (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>NG5-PWA</span>
-    </mat-toolbar>
+    <app-toolbar (homeBtnClick)="sidenav.toggle()"></app-toolbar>
 
     <app-search-bar [searchText]="searchText"
                     (search)="onSearch($event)"

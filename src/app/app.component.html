@@ -2,31 +2,7 @@
   <mat-sidenav #sidenav
                [mode]="sideNavMode"
                [opened]="!isSmallScreen">
-    <div class="sidenav-title">
-      <mat-list>
-        <mat-list-item class="sidenav-title-text">NG5-PWA</mat-list-item>
-      </mat-list>
-    </div>
-    <mat-divider></mat-divider>
-    <mat-list class="sidenav-menu">
-      <mat-list-item class="sidenav-menu-item">
-        <button mat-button
-                class="sidenav-menu-button"
-                (click)="sidenav.toggle()">
-          <span>Pokémon</span>
-        </button>
-      </mat-list-item>
-      <mat-list-item class="sidenav-menu-item">
-        <a href="https://github.com/devlorz/ng5-pwa">
-          <button mat-button
-                  class="sidenav-menu-button">
-            <span>
-              About
-            </span>
-          </button>
-        </a>
-      </mat-list-item>
-    </mat-list>
+    <app-sidenav></app-sidenav>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="accent"

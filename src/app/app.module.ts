@@ -16,6 +16,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { PokemonDetailDialogComponent } from './pokemon-detail-dialog/pokemon-detail-dialog.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   entryComponents: [PokemonDetailDialogComponent],
@@ -25,7 +26,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     PokemonCardComponent,
     PokemonDetailDialogComponent,
     PokemonListComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

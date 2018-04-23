@@ -45,7 +45,6 @@ export class PokemonDetailDialogComponent implements OnInit {
         return `${acc}, ${cur} 50%`;
       }, '');
       const linearGradient = `linear-gradient(90deg${gradient})`;
-      console.log(linearGradient);
       return linearGradient;
     }
   }

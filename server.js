@@ -9,6 +9,8 @@ app.use(express.static(__dirname + '/dist'));
 app.listen(process.env.PORT || 8080);
 
 app.get('/pokemon', function(req, res) {
+  console.log('pokemon : ', pokemon);
   const data = JSON.parse(pokemon);
+  console.log('data : ', data);
   res.status(200).send(data);
 });

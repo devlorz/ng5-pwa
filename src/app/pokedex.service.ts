@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class PokedexService {
-  private baseUrl = 'https://ng5-pwa-a853e.firebaseio.com/pokemon.json';
+  private baseUrl = 'https://ng5-pwa.herokuapp.com/pokemon';
   private baseSpriteUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
   constructor(private http: HttpClient) {}

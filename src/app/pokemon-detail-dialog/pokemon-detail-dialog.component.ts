@@ -13,9 +13,7 @@ export class PokemonDetailDialogComponent implements OnInit {
     private pokedexService: PokedexService
   ) {}
 
-  ngOnInit() {
-    console.log('pokemon : ', this.pokemon);
-  }
+  ngOnInit() {}
 
   getColor(type: string) {
     return this.pokedexService.getColorCode(type);

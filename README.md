@@ -1,5 +1,7 @@
 # Ng5Pwa
 
+[![Lighthouse score: 91/100](https://lighthouse-badge.appspot.com/?score=85&compact&category=PWA)](https://github.com/ebidel/lighthouse-badge)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
